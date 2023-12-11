@@ -1,0 +1,69 @@
+.meal {
+  border: 2px solid black;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  max-height: 340px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 15px;
+  border: none;
+  gap: 5px;
+
+  &__img {
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    gap: 5px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  &__price {
+    font-size: 1.3rem;
+  }
+
+  &__price-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  &__btn {
+    background-color: rgba(248, 114, 22, 255);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s;
+    border-radius: 10px;
+    &:active {
+      transform: scale(1.4);
+    }
+  }
+
+  span {
+    margin: 0 10px;
+  }
+}
+
+@media all and (max-width: 700px) {
+
+  
+}

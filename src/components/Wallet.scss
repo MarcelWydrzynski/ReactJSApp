@@ -1,0 +1,128 @@
+.wallet {
+  width: 30%;
+  background-color: rgba(248, 114, 22, 255);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+
+  .wallet-box-balance {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 10px;
+
+    &__title {
+      font-size: 1.3rem;
+    }
+
+    &__price {
+      font-size: 1.3rem;
+    }
+  }
+
+  .wallet-box-fundsAddition {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    width: 100%;
+
+    h4 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .wallet-box-input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+
+      & label {
+        font-size: 1.3rem;
+      }
+
+      & input {
+        width: 100%;
+        border-radius: 15px;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 1rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .wallet-payment-method {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+
+      &__btn {
+        border: 2px solid black;
+        margin: 0;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+        border: 3px solid white;
+        cursor: pointer;
+        transition: all 0.4s;
+        border-radius: 50%;
+
+        &:active {
+          border: 2px solid rgba(248, 114, 22, 255);
+          transform: scale(1.2);
+        }
+
+        img {
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .wallet-funds-btn {
+      font-size: 1.3rem;
+      padding: 10px;
+      border: 2px solid transparent;
+      border-radius: 15px;
+      background-color: rgba(248, 114, 22, 255);
+      color: white;
+      cursor: pointer;
+      transition: all 0.4s;
+      width: 100%;
+
+      &:active {
+        background-color: white;
+        color: rgba(248, 114, 22, 255);
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .wallet {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .wallet {
+    width: 100%;
+  }
+}
